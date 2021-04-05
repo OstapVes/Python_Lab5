@@ -6,7 +6,7 @@ def main():
     with open(input_file, 'r') as log_file:
         file = log_file.readlines()
 
-    find = r"^.*.INFO.*.wildfly.*.WFLY.*."
+    find = r"^.*INFO.*wildfly.*WFLY.*"
     for line in file:
 
         result = (re.findall(find, line))
